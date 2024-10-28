@@ -8,6 +8,8 @@ import {
   View,
 } from 'react-native';
 
+
+
 function App(): React.JSX.Element {
   return (
     <LinearGradient
@@ -17,90 +19,89 @@ function App(): React.JSX.Element {
       style={styles.gradient}
     >
 
-      <View style={{flex:1,alignItems:"stretch",left:15}}>
+      <View style={{ flex: 1, alignItems: "stretch", left: 15 }}>
 
         <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tuse} >
+          <TouchableOpacity style={styles.tuse} onPress={() => console.log("merhaba")} >
             <Text style={styles.buttontext2}>e</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tusµ} >
+          <TouchableOpacity style={styles.tusµ} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext2}>µ</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tussin} >
+          <TouchableOpacity style={styles.tussin} onPress={() => console.log("merhaba")} >
             <Text style={styles.buttontext2}>sin</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tusdeg} >
+          <TouchableOpacity style={styles.tusdeg} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext2}>deg</Text>
           </TouchableOpacity>
         </View>
 
         <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tusac} >
-            <Text style={styles.buttontext}>AC</Text>
+          <TouchableOpacity style={styles.tusac} onPress={() => console.log("merhaba")} >
+            <Text style={[styles.buttontext,{color:"blue"}]}>Ac</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tusbackspace} >
-            <Icon name='backspace' size={30} color="#000" />
-
+          <TouchableOpacity style={styles.tusbackspace} onPress={() => console.log("merhaba")}>
+            <Icon name='backspace' size={30} color="blue" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tusbölme} >
-            <Text style={styles.buttontext}>/</Text>
+          <TouchableOpacity style={styles.tusbölme} onPress={() => console.log("merhaba")}>
+            <Text style={[styles.buttontext,{color:"blue"}]}>/</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tuscarpma} >
-            <Text style={styles.buttontext}>*</Text>
+          <TouchableOpacity style={styles.tuscarpma} onPress={() => console.log("merhaba")}>
+            <Text style={[styles.buttontext,{color:"blue"}]}>*</Text>
           </TouchableOpacity>
         </View>
 
         <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tus7} >
+          <TouchableOpacity style={styles.tus7} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>7</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tus8} >
+          <TouchableOpacity style={styles.tus8} onPress={() => console.log("merhaba")} >
             <Text style={styles.buttontext}>8</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tus9} >
+          <TouchableOpacity style={styles.tus9} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>9</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tuscikarma} >
-            <Text style={styles.buttontext}>-</Text>
+          <TouchableOpacity style={styles.tuscikarma} onPress={() => console.log("merhaba")}>
+            <Text style={[styles.buttontext,{color:"blue"}]}>-</Text>
           </TouchableOpacity>
         </View>
 
-        <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tus4} >
+        <View style={{ flexDirection: "row" }} >
+          <TouchableOpacity style={styles.tus4} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>4</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tus5} >
+          <TouchableOpacity style={styles.tus5} onPress={() => console.log("merhaba")} >
             <Text style={styles.buttontext}>5</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tus6} >
+          <TouchableOpacity style={styles.tus6} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>6</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tustopla} >
-            <Text style={styles.buttontext}>+</Text>
+          <TouchableOpacity style={styles.tustopla} onPress={() => console.log("merhaba")}>
+            <Text style={[styles.buttontext,{color:"blue"}]}>+</Text>
           </TouchableOpacity>
         </View>
 
         <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tus1} >
+          <TouchableOpacity style={styles.tus1} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>1</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tus2} >
+          <TouchableOpacity style={styles.tus2} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>2</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tus3} >
+          <TouchableOpacity style={styles.tus3} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>3</Text>
           </TouchableOpacity>
         </View>
 
         <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tus0} >
+          <TouchableOpacity style={styles.tus0} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>0</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tusnokta} >
+          <TouchableOpacity style={styles.tusnokta} onPress={() => console.log("merhaba")}>
             <Text style={styles.buttontext}>.</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tusesittir} >
-            <Text style={styles.buttontext}>=</Text>
+          <TouchableOpacity style={styles.tusesittir} onPress={() => console.log("merhaba")}>
+            <Text style={[styles.buttontext,{color:"white"}]}>=</Text>
           </TouchableOpacity>
 
         </View>
@@ -120,25 +121,28 @@ const styles = StyleSheet.create({
     width: 25,
     height: 48,
     fontFamily: 'Poppins', // Poppins fontunu kullanmak için eklenmiş olmalı
-    fontSize: 15,
-    fontWeight: 'bold',
+    fontSize: 20,
+    fontWeight: '900',
     lineHeight: 45,
     textAlign: 'center',
-    color: "black",
+    color: "white",
     // background-blend-mode: overlay,
+    textShadowRadius: 10
 
   },
   buttontext2: {
     width: 17,
     height: 48,
     fontFamily: 'Poppins', // Poppins fontunu kullanmak için eklenmiş olmalı
-    fontSize: 10,
-    fontWeight: 'bold',
+    fontSize: 15,
+    fontWeight: '900',
     lineHeight: 45,
     textAlign: 'left',
+    color:"white",
+    textShadowRadius: 10
   },
   tuse: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -155,7 +159,7 @@ const styles = StyleSheet.create({
     margin: 5
   },
   tusµ: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -169,10 +173,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tussin: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -186,10 +190,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tusdeg: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -203,10 +207,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tusac: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -220,10 +224,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tusbackspace: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -237,7 +241,7 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tusbölme: {
     backgroundColor: "#ADD8FF",
@@ -254,7 +258,7 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tuscarpma: {
     backgroundColor: "#ADD8FF",
@@ -271,10 +275,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus7: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -288,10 +292,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus8: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -305,10 +309,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus9: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -322,7 +326,7 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tuscikarma: {
     backgroundColor: "#ADD8FF",
@@ -339,10 +343,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus4: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -356,10 +360,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus5: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -373,10 +377,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus6: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -390,7 +394,7 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tustopla: {
     backgroundColor: "#ADD8FF",
@@ -407,10 +411,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus1: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -424,10 +428,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus2: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -441,10 +445,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus3: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -458,10 +462,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tus0: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 142,
@@ -475,10 +479,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tusnokta: {
-    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -492,10 +496,10 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
   tusesittir: {
-    backgroundColor: "#ADD8FF",
+    backgroundColor: "#36BCFF",
     justifyContent: "center",
     alignItems: "center",
     width: 62,
@@ -509,7 +513,7 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin:5
+    margin: 5
   },
 
 });
