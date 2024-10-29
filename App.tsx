@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+
+
 import {
   StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
   View,
+  Image,
 } from 'react-native';
+
 
 
 
@@ -23,7 +27,7 @@ function App(): React.JSX.Element {
       style={styles.gradient}
     >
 
-      
+
 
       <View style={{ flex: 1, alignItems: "stretch", left: 15 }}>
 
@@ -47,7 +51,10 @@ function App(): React.JSX.Element {
             <Text style={[styles.buttontext, { color: "blue" }]}>Ac</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tusbackspace} onPress={() => console.log("merhaba")}>
-            <Icon name='backspace' size={30} color="blue" />
+            <Image
+            source={require('./assets/images/icon.png')}
+            style={styles.icon}
+            />
           </TouchableOpacity>
           <TouchableOpacity style={styles.tusbölme} onPress={() => console.log("merhaba")}>
             <Text style={[styles.buttontext, { color: "blue" }]}>/</Text>
@@ -120,6 +127,11 @@ function App(): React.JSX.Element {
 }
 const styles = StyleSheet.create({
 
+  icon:{
+    width:21.8,
+    height:18,
+    color:"red"
+  },
   gradient: {
     flex: 1,
     //justifyContent:"space-between"
@@ -138,7 +150,7 @@ const styles = StyleSheet.create({
 
   },
   buttontext2: {
-    width: 17,
+    width: 30,
     height: 48,
     fontFamily: 'Poppins', // Poppins fontunu kullanmak için eklenmiş olmalı
     fontSize: 15,
@@ -149,7 +161,7 @@ const styles = StyleSheet.create({
     textShadowRadius: 10
   },
   tuse: {
-    
+
     backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
@@ -521,7 +533,9 @@ const styles = StyleSheet.create({
     paddingBottom: 6,// alt kenar boşluğu,içeri doğru
     paddingLeft: 4,  // sol kenar boşluğu,içeri doğru
     paddingRight: 4, //sağ kenar boşluğu,içeri doğru
-    margin: 5
+    margin: 5,
+
+
   },
 
 });
