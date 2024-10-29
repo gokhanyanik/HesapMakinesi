@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
   StyleSheet,
   Text,
+  TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -11,6 +12,9 @@ import {
 
 
 function App(): React.JSX.Element {
+
+  const [total, setTotal] = useState("")
+
   return (
     <LinearGradient
       colors={['white', '#ADD8FF']}
@@ -18,6 +22,8 @@ function App(): React.JSX.Element {
       end={{ x: 1.1, y: 0 }}
       style={styles.gradient}
     >
+
+      
 
       <View style={{ flex: 1, alignItems: "stretch", left: 15 }}>
 
@@ -38,16 +44,16 @@ function App(): React.JSX.Element {
 
         <View style={{ flexDirection: "row" }}>
           <TouchableOpacity style={styles.tusac} onPress={() => console.log("merhaba")} >
-            <Text style={[styles.buttontext,{color:"blue"}]}>Ac</Text>
+            <Text style={[styles.buttontext, { color: "blue" }]}>Ac</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tusbackspace} onPress={() => console.log("merhaba")}>
             <Icon name='backspace' size={30} color="blue" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.tusbölme} onPress={() => console.log("merhaba")}>
-            <Text style={[styles.buttontext,{color:"blue"}]}>/</Text>
+            <Text style={[styles.buttontext, { color: "blue" }]}>/</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tuscarpma} onPress={() => console.log("merhaba")}>
-            <Text style={[styles.buttontext,{color:"blue"}]}>*</Text>
+            <Text style={[styles.buttontext, { color: "blue" }]}>*</Text>
           </TouchableOpacity>
         </View>
 
@@ -62,7 +68,7 @@ function App(): React.JSX.Element {
             <Text style={styles.buttontext}>9</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tuscikarma} onPress={() => console.log("merhaba")}>
-            <Text style={[styles.buttontext,{color:"blue"}]}>-</Text>
+            <Text style={[styles.buttontext, { color: "blue" }]}>-</Text>
           </TouchableOpacity>
         </View>
 
@@ -77,7 +83,7 @@ function App(): React.JSX.Element {
             <Text style={styles.buttontext}>6</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tustopla} onPress={() => console.log("merhaba")}>
-            <Text style={[styles.buttontext,{color:"blue"}]}>+</Text>
+            <Text style={[styles.buttontext, { color: "blue" }]}>+</Text>
           </TouchableOpacity>
         </View>
 
@@ -101,7 +107,7 @@ function App(): React.JSX.Element {
             <Text style={styles.buttontext}>.</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tusesittir} onPress={() => console.log("merhaba")}>
-            <Text style={[styles.buttontext,{color:"white"}]}>=</Text>
+            <Text style={[styles.buttontext, { color: "white" }]}>=</Text>
           </TouchableOpacity>
 
         </View>
@@ -116,6 +122,7 @@ const styles = StyleSheet.create({
 
   gradient: {
     flex: 1,
+    //justifyContent:"space-between"
   },
   buttontext: {
     width: 25,
@@ -138,10 +145,11 @@ const styles = StyleSheet.create({
     fontWeight: '900',
     lineHeight: 45,
     textAlign: 'left',
-    color:"white",
+    color: "white",
     textShadowRadius: 10
   },
   tuse: {
+    
     backgroundColor: "#E6F8FF",
     justifyContent: "center",
     alignItems: "center",
