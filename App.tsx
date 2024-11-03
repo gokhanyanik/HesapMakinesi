@@ -8,6 +8,7 @@ import {
   View,
   Image,
 } from 'react-native';
+import ButtonInput from './src/ButtonInput';
 
 
 function App(): React.JSX.Element {
@@ -47,14 +48,15 @@ function App(): React.JSX.Element {
       style={styles.gradient}
     >
       <View style={{ flex: 1, alignItems: "stretch", left: 15 }}>
-        <View style={{ height: 1 }}>
-          <TextInput
-            style={styles.input}
-            placeholder='0'
-            value={total}
-            onChangeText={setTotal}
-          />
-        </View>
+       
+       
+       
+        <ButtonInput total={total} setTotal={setTotal}/>
+       
+       
+       
+       
+       
         <View style={{ flexDirection: "row" }}>
           <TouchableOpacity style={styles.tuse} onPress={() => handleButtonPress("e")} >
             <Text style={styles.buttontext2}>e</Text>
