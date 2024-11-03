@@ -9,6 +9,10 @@ import {
   Image,
 } from 'react-native';
 import ButtonInput from './src/ButtonInput';
+import ButtonE from './src/ButtonE';
+import ButtonPi from './src/ButtonPi';
+import ButtonSin from './src/ButtonSin';
+import ButtonDeg from './src/ButtonDeg';
 
 
 function App(): React.JSX.Element {
@@ -48,28 +52,14 @@ function App(): React.JSX.Element {
       style={styles.gradient}
     >
       <View style={{ flex: 1, alignItems: "stretch", left: 15 }}>
-       
-       
-       
-        <ButtonInput total={total} setTotal={setTotal}/>
-       
-       
-       
-       
-       
+
+        <ButtonInput total={total} setTotal={setTotal} />
+
         <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.tuse} onPress={() => handleButtonPress("e")} >
-            <Text style={styles.buttontext2}>e</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tusµ} onPress={() => handleButtonPress("3.14")}>
-            <Text style={styles.buttontext2}>µ</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tussin} onPress={() => handleButtonPress("sin")} >
-            <Text style={styles.buttontext2}>sin</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tusdeg} onPress={() => handleButtonPress("deg")}>
-            <Text style={styles.buttontext2}>deg</Text>
-          </TouchableOpacity>
+          <ButtonE onPress={() => handleButtonPress("e")} />
+          <ButtonPi onPress={() => handleButtonPress("3.14")} />
+          <ButtonSin onPress={() => handleButtonPress("sin")} />
+          <ButtonDeg onPress={() => handleButtonPress("deg")} />
         </View>
         <View style={{ flexDirection: "row" }}>
           <TouchableOpacity style={styles.tusac} onPress={() => handleButtonPress("Ac")} >
