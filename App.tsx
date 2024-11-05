@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
+  StyleSheet,  
   View,
-  Image,
 } from 'react-native';
 import ButtonInput from './src/ButtonInput';
 import ButtonE from './src/ButtonE';
